@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>videobelajar — Beranda</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container" style="display: flex; align-items: center">
+        <div class="brand">
+          <div class="logo">vb</div>
+          <div>
+            <div style="font-weight: 800">videobelajar by Gallyn Ditya M</div>
+            <div style="font-size: 12px; color: var(--muted)">
+              Video Course on Demand
+            </div>
+          </div>
+        </div>
+        <nav class="nav">
+          <a class="small" href="login.html">Masuk</a>
+          <a class="small" href="register.html">Daftar</a>
+          <button onclick="location.href='login.html'" class="btn">
+            Mulai
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <div class="left">
+          <h1>Belajar keahlian baru melalui video berkualitas</h1>
+          <p>
+            Platform kursus video on-demand. Pilih kelas, tonton materi, dan
+            kembangkan keterampilanmu kapan saja.
+          </p>
+          <div class="cta">
+            <div class="search">
+              <input
+                class="input"
+                placeholder="Cari kursus: misal 'Desain', 'Pemasaran'..."
+              />
+              <button
+                class="btn"
+                onclick="document.querySelector('.input').focus()"
+              >
+                Cari
+              </button>
+            </div>
+          </div>
+          <div class="grid-head">
+            <div class="profile small">
+              <div class="avatar">U</div>
+              <div>Selamat datang, Pengunjung</div>
+            </div>
+          </div>
+        </div>
+        <div style="width: 360px">
+          <div class="section">
+            <h3 style="margin-top: 0">Langkah cepat</h3>
+            <ol
+              class="small"
+              style="margin: 8px 0; padding-left: 18px; color: #333"
+            >
+              <li>Buat akun atau masuk</li>
+              <li>Jelajahi kategori</li>
+              <li>Pilih course dan mulai belajar</li>
+            </ol>
+            <div style="display: flex; gap: 8px; margin-top: 10px">
+              <button
+                class="btn-primary"
+                onclick="location.href='register.html'"
+              >
+                Daftar Sekarang
+              </button>
+              <button
+                class="btn-primary"
+                onclick="alert('Demo: fitur preview')"
+              >
+                Lihat Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="koleksi">
+        <div
+          style="
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          "
+        >
+          <h2 id="koleksi" style="margin: 0">Koleksi Kursus Unggulan</h2>
+          <a class="link" href="#">Lihat Semua</a>
+        </div>
+        <div class="cards" role="list">
+          <article class="card" role="listitem">
+            <div>
+              <h3>Desain UI/UX — Dasar sampai Mahir</h3>
+              <p>
+                Pelajari prinsip desain antarmuka dan pengalaman pengguna, plus
+                praktik prototyping.
+              </p>
+            </div>
+            <div
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+              "
+            >
+              <div class="small">12 module</div>
+              <button class="btn-primary" onclick="alert('Buka detail course')">
+                Lihat
+              </button>
+            </div>
+          </article>
+          <article class="card" role="listitem">
+            <div>
+              <h3>Pemasaran Digital untuk Pemula</h3>
+              <p>
+                Strategi pemasaran online, social ads, dan optimasi konten untuk
+                pertumbuhan.
+              </p>
+            </div>
+            <div
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+              "
+            >
+              <div class="small">9 module</div>
+              <button class="btn-primary" onclick="alert('Buka detail course')">
+                Lihat
+              </button>
+            </div>
+          </article>
+          <article class="card" role="listitem">
+            <div>
+              <h3>Pengembangan Diri & Produktivitas</h3>
+              <p>
+                Kursus singkat tentang manajemen waktu, mindset, dan kebiasaan
+                produktif.
+              </p>
+            </div>
+            <div
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+              "
+            >
+              <div class="small">6 module</div>
+              <button class="btn-primary" onclick="alert('Buka detail course')">
+                Lihat
+              </button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <h3 style="margin-top: 0">Langganan Newsletter</h3>
+        <form class="form" onsubmit="subscribe(event)">
+          <input
+            type="email"
+            id="email-news"
+            class="input-field"
+            placeholder="Masukkan email untuk update kursus"
+            required
+          />
+          <div style="display: flex; gap: 8px">
+            <button class="btn-primary" type="submit">Daftar</button>
+            <button type="button" class="btn" onclick="alert('Terima kasih!')">
+              Tutup
+            </button>
+          </div>
+        </form>
+      </section>
+
+      <footer class="footer">
+        <div>
+          <div style="font-weight: 800">videobelajar</div>
+          <div class="small">Platform kursus video on-demand</div>
+        </div>
+        <div class="small">© 2025 videobelajar · Semua hak dilindungi</div>
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
